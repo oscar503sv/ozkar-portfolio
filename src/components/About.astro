@@ -1,0 +1,26 @@
+---
+export interface Props {
+    text: string
+}
+const { text } = Astro.props
+---
+
+<h3 class="text-about">
+    {text}
+</h3>
+
+<style>
+    h3.text-about {
+        max-width: 950px;
+        font-size: 30px;
+        text-transform:none;
+        margin: 0;
+        color: #1e1e1e;
+        text-align: justify;
+        font-weight: 200;
+        background: linear-gradient(49.56deg, #1E1E1E 44.7%, rgba(30, 30, 30, 0) 147.42%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        text-fill-color: transparent;
+    }
+</style>

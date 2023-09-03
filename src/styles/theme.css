@@ -1,0 +1,32 @@
+/* Global style */
+html {
+    background-color: #fafaff;
+    color: #1f1f38;
+}
+
+/* Theme Icon */
+html.dark {
+    background-color: #13060c;
+    color: #eee0ee;
+}
+
+.dark h2.title {
+    color: #eee0ee;
+    -webkit-text-fill-color: #eee0ee;
+    }
+
+.dark h3.text-about {
+    color: #eee0ee;
+}
+
+.dark footer > ul > li > a {
+    color: #eee0ee;
+}
+
+.dark footer > ul > li > a:hover {
+    color: orange;
+}
+
+.dark .navbar > ul > li > a:hover{
+    color: orange;
+}

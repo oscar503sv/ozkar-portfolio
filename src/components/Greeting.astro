@@ -1,0 +1,35 @@
+---
+export interface Props {
+    text: string
+}
+const {text} = Astro.props
+---
+
+<p class="welcome-text">{text}</p>
+
+<style>
+    p{
+        display: flex;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .welcome-text {
+        position: relative;
+        right: -200px;
+        opacity: 0;
+        animation: slide-in 1s ease-out forwards, fade-in 1s ease-out forwards;
+    }
+
+    @keyframes slide-in {
+        to{
+            right: 0;
+        }
+    }
+
+    @keyframes fade-in {
+        to{
+            opacity: 1;
+        }
+    }
+</style>
